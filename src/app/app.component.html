@@ -1,0 +1,19 @@
+<div>
+  <table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Sal</th>
+      <th>Designation</th>
+    </tr>
+    <tr *ngFor="let list of lists; let i = index">
+      <td><input type="text" [(ngModel)]="list.name"></td>
+      <td><input type="text" [(ngModel)]="list.age"></td>     
+      <td><input type="text" [(ngModel)]="list.sal"></td>     
+      <td><input type="text" [(ngModel)]="list.desg"></td>
+    </tr>
+  </table>
+
+  <div style="text-align: center; margin-top: 10px;"><button (click)="submitListsData()">SUBMIT</button></div>
+</div>
+
